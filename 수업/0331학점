@@ -1,9 +1,0 @@
-import tkinter
-
-root = tkinter.Tk()
-root.title("학점")
-root.geometry("400x300")
-
-
-
-root.mainloop
