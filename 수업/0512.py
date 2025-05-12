@@ -86,3 +86,7 @@ while True:
 
 inFile.close()
 outFile.close()
+
+
+text = "뷁"
+print(text)
