@@ -39,16 +39,18 @@ print(result)
 ㅎ.. 졸아서 뭐하는건지 모르겠음
 '''
 
-#메인함수
 import tkinter
 
 tmr = 0
 
 #함수선언
 def countUp():
+    global tmr
     tmr = tmr + 1
     label["text"] = tmr
+    root.after(100,countUp)
 
+#메인함수
 root = tkinter.Tk()
 root.title("개졸려")
 root.geometry("300x200")
@@ -56,6 +58,6 @@ root.geometry("300x200")
 label = tkinter.Label(text=0,font=("궁서체",80))
 label.pack()
 
-root.after(1000,countUp)
+root.after(100,countUp)
 
 root.mainloop
