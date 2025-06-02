@@ -25,7 +25,7 @@ for i in range(10): #괄호 8개 공간에 총 10개가 들어?간다고?함 게
 def mouse_move(e):
     global mouse_x, mouse_y
     mouse_x = e.x
-    mouse_y = e.y
+    mouse_y = e.y #마우스 커서 위치
 
 def mouse_press(e):
     global mouse_c
@@ -167,8 +167,8 @@ def game_main():
         draw_neko()
     elif index == 5:  # 마우스 입력 대기
         if 24 <= mouse_x and mouse_x < 24 + 72 * 8 and 24 <= mouse_y and mouse_y < 24 + 72 * 10:
-            cursor_x = int((mouse_x - 24) / 72)
-            cursor_y = int((mouse_y - 24) / 72)
+            cursor_x = int((mouse_x - 24) / 72) # 칸 수만큼 입력 0~7
+            cursor_y = int((mouse_y - 24) / 72) # 칸 수만큼 입력 0~9
             if mouse_c == 1:
                 mouse_c = 0
                 set_neko()
