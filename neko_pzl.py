@@ -25,7 +25,7 @@ for i in range(10): #괄호 8개 공간에 총 10개가 들어?간다고?함 게
 
 
 #블럭정보 저장
-blockcount = 
+#blockcount = ~
 
 #함수영역
 def mouse_move(e):
