@@ -15,11 +15,17 @@ mouse_x = 0
 mouse_y = 0
 mouse_c = 0
 
+
+#공간정보 저장
 neko = [] #리스트
 check = []
 for i in range(10): #괄호 8개 공간에 총 10개가 들어?간다고?함 게임공간 가로세로 영역
     neko.append([0, 0, 0, 0, 0, 0, 0, 0])
     check.append([0, 0, 0, 0, 0, 0, 0, 0])
+
+
+#블럭정보 저장
+blockcount = 
 
 #함수영역
 def mouse_move(e):
